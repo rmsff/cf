@@ -10,6 +10,7 @@ import TableQuotes from '../components/TableQuotes';
 import useQuery from '../hooks/useQuery';
 
 import { ETabsValue } from '../enums/index.enum';
+import { Routes } from '../enums/routes.enum';
 
 interface ITabPanelProps {
 	children?: React.ReactNode;
@@ -40,7 +41,7 @@ function QuotesPage() {
 
 	const handleChangeTab = (event: SyntheticEvent, newValue: ETabsValue) => {
 		setValueTabs(newValue);
-		history.push(`/quotes?tab=${newValue}`);
+		history.push(`/${Routes.Quotes}?tab=${newValue}`);
 	};
 
 	return (
