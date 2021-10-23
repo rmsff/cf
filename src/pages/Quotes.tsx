@@ -46,8 +46,8 @@ function QuotesPage() {
 	return (
 		<Box sx={{ borderColor: 'divider' }}>
 			<Tabs value={valueTabs} onChange={handleChangeTab} centered>
-				<Tab label="Tab 1" />
-				<Tab label="Tab 2" />
+				<Tab label="Котировки А" />
+				<Tab label="Котировки Б" />
 			</Tabs>
 			<TabPanel value={valueTabs} index={ETabsValue.first}>
 				<TableQuotes />
