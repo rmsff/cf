@@ -1,2 +1,6 @@
-start development project: npm run dev
-address: localhost:3000
+start development project
+
+```bash
+npm run dev
+
+```
