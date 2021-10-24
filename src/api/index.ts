@@ -12,10 +12,10 @@ export const getQuotes = (tab: ETabsValue) =>
 
 		switch (Number(tab)) {
 			case ETabsValue.first: {
-				return items.splice(0, count / 2);
+				return items.slice(0, count / 2);
 			}
 			case ETabsValue.second: {
-				return items.splice(count / 2, count);
+				return items.slice(count / 2, count);
 			}
 			default:
 				return [];
