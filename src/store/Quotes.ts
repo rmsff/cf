@@ -16,16 +16,16 @@ class Quotes {
 
 	private intervalId: any = null;
 
-	@observable
+	@observable.shallow
 	quotes: TQuotes = [];
 
-	@observable
+	@observable.shallow
 	selectedQuote: null | IQuotesItem = null;
 
-	@observable
+	@observable.struct
 	loading: boolean = false;
 
-	@observable
+	@observable.struct
 	isError: boolean = false;
 
 	@action
